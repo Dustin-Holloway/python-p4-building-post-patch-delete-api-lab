@@ -28,9 +28,6 @@ def bakeries():
             bakery_dict = bakery.to_dict()
             bakeries.append(bakery_dict)
 
-        # bakeries = Bakery.query.all()
-        # bakeries_serialized = [bakery.to_dict() for bakery in bakeries]
-
         response = make_response(jsonify(bakeries), 200)
         return response
 
